@@ -1,0 +1,57 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Geist_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
+
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: "ReFi Universe Protocol (ReFiUP) - White Paper",
+  description:
+    "Like Pokémon Go — but instead of catching Pokémon, you collect trash. Save the world. Have fun. A regenerative finance protocol for humanity.",
+  generator: "v0.app",
+  keywords: [
+    "ReFi",
+    "Regenerative Finance",
+    "Ethereum",
+    "ZK-Proofs",
+    "AI",
+    "Cypherpunk",
+    "DevConnect",
+    "Buenos Aires",
+    "Climate Action",
+  ],
+  icons: {
+    icon: [
+      {
+        url: "/icon-light-32x32.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark-32x32.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: "/apple-icon.png",
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en">
+      <body className={`font-mono antialiased`}>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  )
+}
