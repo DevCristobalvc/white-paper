@@ -53,6 +53,16 @@ export default function RoadmapPage() {
                     <span>ES</span>
                     {locale === "es" && <Check className="w-3 h-3" />}
                   </button>
+                  <button
+                    onClick={() => {
+                      setLocale("pt")
+                      setShowLangMenu(false)
+                    }}
+                    className="w-full px-3 py-2 text-left hover:bg-black/5 flex items-center justify-between text-xs"
+                  >
+                    <span>PT</span>
+                    {locale === "pt" && <Check className="w-3 h-3" />}
+                  </button>
                 </div>
               )}
             </div>

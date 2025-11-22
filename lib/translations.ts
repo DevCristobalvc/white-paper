@@ -1,4 +1,4 @@
-export type Locale = "es" | "en"
+export type Locale = "es" | "en" | "pt"
 
 export const translations = {
   es: {
@@ -104,30 +104,33 @@ export const translations = {
     roadmap: {
       heading: "ROADMAP PÚBLICO",
       phase1: {
-        title: "FASE 1: PROOF OF CONCEPT",
+        title: "MÓDULO 1: MVP MANUAL (DevConnect Hackathon)",
         items: [
-          "Deploy del protocolo en testnet",
-          "Integración de cámara + geolocalización",
-          "Primera validación con x402 AI Agent",
-          "Sistema de reputación anónimo (ZK)",
+          "Operador humano recibe fotos de limpieza vía app simple",
+          "Lista de wallets para distribuir recompensas manualmente",
+          "Validación básica: foto + ubicación + timestamp",
+          "Primera distribución de tokens a limpiadores verificados",
+          "Deploy de Safe Wallet para recibir donaciones corporativas",
         ],
       },
       phase2: {
-        title: "FASE 2: MAINNET ALPHA",
+        title: "MÓDULO 2: DAO DE 5 AGENTES AI",
         items: [
-          "Launch en Buenos Aires post-DevConnect",
-          "Integración con datos satelitales",
-          "Marketplace de Impact Certificates",
-          "Auditorías de seguridad ZK-STARKs",
+          "Deploy de 5 Agentes AI autónomos (ERC-8002)",
+          "DAO para gobernanza: agentes votan validaciones",
+          "Integración con datos satelitales para validación automática",
+          "Corporaciones reciben NFT de reducción de impuestos verdes",
+          "Safe Wallet gestiona fondos de forma descentralizada",
         ],
       },
       phase3: {
-        title: "FASE 3: ESCALA GLOBAL",
+        title: "MÓDULO 3: PRIVACIDAD ZK + ESCALA GLOBAL",
         items: [
+          "Implementación completa de ZK-STARKs para anonimato",
+          "Marketplace de Impact Certificates verificables on-chain",
           "Expansión a 10 ciudades latinoamericanas",
-          "DAO para gobernanza del protocolo",
-          "Partnerships con gobiernos locales",
           "Standard x402 como protocolo abierto",
+          "Partnerships con gobiernos y ONGs locales",
         ],
       },
     },
@@ -153,6 +156,7 @@ export const translations = {
     whitepaper: {
       title: "ReFi Universe Protocol (ReFiUP)",
       subtitle: "White-Paper Style · Typewriter Font · Black & White · No Scroll · No Buttons",
+      subtitle_small: "white paper • bienes comunes • código abierto",
       tagline: '"Como Pokémon Go — pero en lugar de atrapar Pokémon, recolectas basura. Salva el mundo. Diviértete."',
       description:
         "Un protocolo de finanzas regenerativas para la humanidad. Vibes OG. Energía Cypher. Un mensaje del futuro disfrazado como white paper.",
@@ -192,6 +196,22 @@ export const translations = {
         docs: "Docs",
         github: "GitHub",
         discord: "Discord",
+      },
+    },
+    home: {
+      title: "ReFi Universe Protocol",
+      tagline: "Coordinate humans to clean the planet. Verify impact with AI. Protect privacy with ZK.",
+      problem: {
+        title: "→ Problem",
+        desc: "Carbon footprint from human activity is destroying the planet. Current systems can't coordinate cleanup at scale while protecting privacy.",
+      },
+      solution: {
+        title: "→ Solution",
+        desc: "Human coordination through incentives. Take photo of cleanup → AI validates impact → Earn rewards. All anonymous with Zero Knowledge Proofs.",
+      },
+      model: {
+        title: "→ Model",
+        desc: "5 AI Agents DAO + Safe Wallet. Corporations donate for green tax reduction NFTs. Manual MVP: operator distributes rewards to wallet list. Scales to full automation.",
       },
     },
   },
@@ -298,30 +318,33 @@ export const translations = {
     roadmap: {
       heading: "PUBLIC ROADMAP",
       phase1: {
-        title: "PHASE 1: PROOF OF CONCEPT",
+        title: "MODULE 1: MANUAL MVP (DevConnect Hackathon)",
         items: [
-          "Protocol deployment on testnet",
-          "Camera + geolocation integration",
-          "First validation with x402 AI Agent",
-          "Anonymous reputation system (ZK)",
+          "Human operator receives cleanup photos via simple app",
+          "Wallet list for manual reward distribution",
+          "Basic validation: photo + location + timestamp",
+          "First token distribution to verified cleaners",
+          "Deploy Safe Wallet to receive corporate donations",
         ],
       },
       phase2: {
-        title: "PHASE 2: MAINNET ALPHA",
+        title: "MODULE 2: 5 AI AGENTS DAO",
         items: [
-          "Launch in Buenos Aires post-DevConnect",
-          "Satellite data integration",
-          "Impact Certificates marketplace",
-          "ZK-STARKs security audits",
+          "Deploy 5 autonomous AI Agents (ERC-8002)",
+          "DAO for governance: agents vote on validations",
+          "Satellite data integration for automatic validation",
+          "Corporations receive green tax reduction NFTs",
+          "Safe Wallet manages funds in decentralized way",
         ],
       },
       phase3: {
-        title: "PHASE 3: GLOBAL SCALE",
+        title: "MODULE 3: ZK PRIVACY + GLOBAL SCALE",
         items: [
+          "Full ZK-STARKs implementation for anonymity",
+          "Impact Certificates marketplace verifiable on-chain",
           "Expansion to 10 Latin American cities",
-          "DAO for protocol governance",
-          "Partnerships with local governments",
           "x402 Standard as open protocol",
+          "Partnerships with governments and local NGOs",
         ],
       },
     },
@@ -347,6 +370,7 @@ export const translations = {
     whitepaper: {
       title: "ReFi Universe Protocol (ReFiUP)",
       subtitle: "White-Paper Style · Typewriter Font · Black & White · No Scroll · No Buttons",
+      subtitle_small: "white paper • common goods • open source powered",
       tagline: '"Like Pokémon Go — but instead of catching Pokémon, you collect trash. Save the world. Have fun."',
       description:
         "A regenerative finance protocol for humanity. OG vibes. Cypher energy. A message from the future disguised as a white paper.",
@@ -386,6 +410,236 @@ export const translations = {
         docs: "Docs",
         github: "GitHub",
         discord: "Discord",
+      },
+    },
+    home: {
+      title: "ReFi Universe Protocol",
+      tagline: "Coordinate humans to clean the planet. Verify impact with AI. Protect privacy with ZK.",
+      problem: {
+        title: "→ Problem",
+        desc: "Carbon footprint from human activity is destroying the planet. Current systems can't coordinate cleanup at scale while protecting privacy.",
+      },
+      solution: {
+        title: "→ Solution",
+        desc: "Human coordination through incentives. Take photo of cleanup → AI validates impact → Earn rewards. All anonymous with Zero Knowledge Proofs.",
+      },
+      model: {
+        title: "→ Model",
+        desc: "5 AI Agents DAO + Safe Wallet. Corporations donate for green tax reduction NFTs. Manual MVP: operator distributes rewards to wallet list. Scales to full automation.",
+      },
+    },
+  },
+  pt: {
+    nav: {
+      camera: "CÂMERA",
+      map: "MAPA",
+      wallet: "ZK-WALLET",
+      docs: "DOCUMENTAÇÃO",
+      tech: "TECNOLOGIA",
+      roadmap: "ROADMAP",
+      faq: "FAQ",
+    },
+    hero: {
+      badge: "DEVCONNECT BUENOS AIRES // 15 NOV, 2025",
+      title1: "EM 15 DE NOV DE 2025,",
+      title2: "NO DEVCONNECT,",
+      title3: "O CÉU CAIU.",
+      subtitle: "VENTO, CHUVA, CALOR EXTREMO EM 24 HORAS.",
+    },
+    critical: {
+      title: "Enquanto o clima colapsava lá fora, dentro continuávamos otimizando rendimentos de 0.001% APY.",
+      description:
+        "Ethereum nasceu para coordenar a humanidade, não apenas especular com ela. 99% dos dApps hoje são cassinos glorificados.",
+      highlight: "Falhamos com a visão original.",
+    },
+    solution: {
+      title1: "NÃO SOMOS DEFI.",
+      title2: "SOMOS REFI.",
+      subtitle: "RECUPERAMOS O MUNDO FÍSICO DO DIGITAL.",
+      anonymous: {
+        title: "100% ANÔNIMO",
+        desc: "Zero Knowledge Proofs protegem sua identidade",
+      },
+      ai: {
+        title: "POWERED BY AI",
+        desc: "Padrões x402 & 8002 validam impacto real",
+      },
+      gasless: {
+        title: "SEM GAS",
+        desc: "Sem permissões. Apenas impacto verificável.",
+      },
+    },
+    cta: {
+      button: "PROOF OF CLEANUP // CAPTURE AGORA",
+      subtitle: "Tire uma foto. Verifique o impacto. Ganhe recompensas. Tudo anônimo.",
+    },
+    stats: {
+      heading: "IMPACTO AO VIVO",
+      cleanups: "Limpezas Verificadas",
+      agents: "Agentes AI Ativos",
+      waste: "Toneladas Removidas",
+      privacy: "Privacidade ZK",
+    },
+    cases: {
+      heading: "CASOS DE USO",
+      a: {
+        label: "CASO_A://",
+        title: "The Shadow Walker",
+        desc: "Um cypherpunk que odeia KYC. Limpa seu bairro, ganha tokens, mantém identidade oculta com ZK-Proofs.",
+        footer: "→ Impacto público, identidade privada.",
+      },
+      b: {
+        label: "CASO_B://",
+        title: "The AI Auditor",
+        desc: "Agente autônomo ERC-8002 cruza dados de satélite com fotos. Detecta fraude automaticamente on-chain.",
+        footer: "→ Confiança programática. Não confie, verifique.",
+      },
+      c: {
+        label: "CASO_C://",
+        title: "The Tax Hacker",
+        desc: "Corporações compram Certificados de Impacto. Elas não sabem quem limpou, mas sabem matematicamente que aconteceu.",
+        footer: "→ Títulos verdes verificáveis. Compliance instantâneo.",
+      },
+    },
+    howto: {
+      heading: "COMO FUNCIONA",
+      step1: {
+        title: "Capture",
+        desc: "Tire uma foto da área que você limpou com seu smartphone",
+      },
+      step2: {
+        title: "AI Valida",
+        desc: "Agentes ERC-8002 verificam seu impacto contra dados de satélite",
+      },
+      step3: {
+        title: "ZK Protege",
+        desc: "Sua identidade permanece 100% anônima com ZK-STARKs",
+      },
+      step4: {
+        title: "Ganhe Recompensas",
+        desc: "Receba tokens + Certificados de Impacto verificáveis on-chain",
+      },
+    },
+    tech: {
+      heading: "Stack Técnico",
+      items: {
+        zk: { title: "ZK-STARKs", desc: "Camada de Privacidade" },
+        x402: { title: "Padrão x402", desc: "Trabalho de Agente AI" },
+        erc: { title: "ERC-8002", desc: "Lógica AI Híbrida" },
+        circular: { title: "Economia Circular", desc: "Impacto → Valor" },
+      },
+    },
+    roadmap: {
+      heading: "ROADMAP PÚBLICO",
+      phase1: {
+        title: "MÓDULO 1: MVP MANUAL (DevConnect Hackathon)",
+        items: [
+          "Operador humano recebe fotos de limpeza via app simples",
+          "Lista de wallets para distribuir recompensas manualmente",
+          "Validação básica: foto + localização + timestamp",
+          "Primeira distribuição de tokens para limpadores verificados",
+          "Deploy de Safe Wallet para receber doações corporativas",
+        ],
+      },
+      phase2: {
+        title: "MÓDULO 2: DAO DE 5 AGENTES AI",
+        items: [
+          "Deploy de 5 Agentes AI autônomos (ERC-8002)",
+          "DAO para governança: agentes votam validações",
+          "Integração com dados de satélite para validação automática",
+          "Corporações recebem NFT de redução de impostos verdes",
+          "Safe Wallet gerencia fundos de forma descentralizada",
+        ],
+      },
+      phase3: {
+        title: "MÓDULO 3: PRIVACIDADE ZK + ESCALA GLOBAL",
+        items: [
+          "Implementação completa de ZK-STARKs para anonimato",
+          "Marketplace de Certificados de Impacto verificáveis on-chain",
+          "Expansão para 10 cidades latino-americanas",
+          "Padrão x402 como protocolo aberto",
+          "Parcerias com governos e ONGs locais",
+        ],
+      },
+    },
+    faq: {
+      heading: "PERGUNTAS FREQUENTES",
+      q1: {
+        q: "Por que ZK-Proofs?",
+        a: "Porque privacidade não é opcional. Se sua identidade está ligada a cada ação, você não é livre. ZK-STARKs provam impacto sem revelar quem você é.",
+      },
+      q2: {
+        q: "Como vocês previnem fraude?",
+        a: "Agentes AI (ERC-8002) cruzam suas fotos com dados de satélite e modelos de detecção de objetos. Você não pode falsificar impacto porque a validação é matemática.",
+      },
+      q3: {
+        q: "Quem paga as recompensas?",
+        a: "Corporações que precisam de compliance ESG real. Elas compram Certificados de Impacto verificáveis on-chain. É economia circular: impacto real gera valor real.",
+      },
+      q4: {
+        q: "Isso é só para crypto-nerds?",
+        a: "Não. É um app com câmera. Tire foto, ganhe tokens. A complexidade técnica está oculta. O impacto é visível.",
+      },
+    },
+    whitepaper: {
+      title: "ReFi Universe Protocol (ReFiUP)",
+      subtitle: "Estilo White-Paper · Fonte Typewriter · Preto & Branco · Sem Scroll · Sem Botões",
+      subtitle_small: "white paper • bens comuns • código aberto",
+      tagline: '"Como Pokémon Go — mas ao invés de capturar Pokémon, você coleta lixo. Salve o mundo. Divirta-se."',
+      description:
+        "Um protocolo de finanças regenerativas para a humanidade. Vibes OG. Energia Cypher. Uma mensagem do futuro disfarçada como white paper.",
+      energy: "🜁 Powered by Open-Source Humanity",
+      alerts: {
+        defi: "SE VOCÊ ESTÁ CONSTRUINDO DEFI VOCÊ NÃO É HUMANO 🚨",
+        refi: "FXK DEFI — CONSTRUA REFI.",
+      },
+      powered: {
+        heading: "Powered by Open-Source Humanity",
+      },
+      inspiration: {
+        heading: "Inspiração",
+        video: '※ Referência de vídeo: "Homem na África"',
+      },
+      modules: {
+        heading: "Módulos Principais",
+        tech: "Tech",
+        context: "Context",
+        history: "History",
+        ux: "UX",
+        empty: "(Aberto para preencher depois)",
+      },
+      manifesto: {
+        p1: "O clima colapsou em 15 de novembro de 2025 no DevConnect Buenos Aires. Enquanto lá fora havia vento, chuva e calor extremo em 24 horas, dentro continuávamos otimizando rendimentos de 0.001%. Ethereum nasceu para coordenar a humanidade, não apenas para especular.",
+        p2: "ReFi Universe Protocol usa Zero Knowledge Proofs para proteger sua privacidade enquanto verifica impacto real. Agentes AI (x402, ERC-8002) validam cada limpeza contra dados de satélite. Sem mais greenwashing. Sem mais KYC. Apenas matemática, impacto e recompensas.",
+        p3: "Esta é a visão original do Ethereum: coordenar humanos para resolver problemas reais. Sem cassinos. Sem especulação. Regeneração.",
+      },
+      footer: {
+        heading: "Rodapé",
+        message: "Uma mensagem do futuro disfarçada como white paper. Construído com energia OG Cypher.",
+      },
+    },
+    footer: {
+      powered: "Powered by ReFi Universe // ZK-STARKs // x402 AI",
+      links: {
+        docs: "Docs",
+        github: "GitHub",
+        discord: "Discord",
+      },
+    },
+    home: {
+      title: "ReFi Universe Protocol",
+      tagline: "Coordinate humans to clean the planet. Verify impact with AI. Protect privacy with ZK.",
+      problem: {
+        title: "→ Problem",
+        desc: "Carbon footprint from human activity is destroying the planet. Current systems can't coordinate cleanup at scale while protecting privacy.",
+      },
+      solution: {
+        title: "→ Solution",
+        desc: "Human coordination through incentives. Take photo of cleanup → AI validates impact → Earn rewards. All anonymous with Zero Knowledge Proofs.",
+      },
+      model: {
+        title: "→ Model",
+        desc: "5 AI Agents DAO + Safe Wallet. Corporations donate for green tax reduction NFTs. Manual MVP: operator distributes rewards to wallet list. Scales to full automation.",
       },
     },
   },
