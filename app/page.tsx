@@ -20,7 +20,6 @@ export default function Home() {
   }, [])
 
   const changeLanguage = (newLocale: Locale) => {
-    console.log('Cambiando idioma a:', newLocale)
     setLocale(newLocale)
     localStorage.setItem("refi-locale", newLocale)
   }

@@ -33,8 +33,6 @@ export function LanguageSelector({ locale, onLocaleChange }: LanguageSelectorPro
   }, [showLangMenu])
 
   const handleLocaleChange = (newLocale: Locale) => {
-    console.log('LanguageSelector - handleLocaleChange llamado con:', newLocale)
-    console.log('LanguageSelector - locale actual antes del cambio:', locale)
     onLocaleChange(newLocale)
     setShowLangMenu(false)
   }
