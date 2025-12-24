@@ -14,12 +14,6 @@ export default function MarqueeFooter() {
               SELF
             </span>
             <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
-              ETH CALI
-            </span>
-            <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
-              ETH COLOMBIA
-            </span>
-            <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
               UVD
             </span>
             <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
@@ -47,12 +41,6 @@ export default function MarqueeFooter() {
             </span>
             <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
               SELF
-            </span>
-            <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
-              ETH CALI
-            </span>
-            <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
-              ETH COLOMBIA
             </span>
             <span className="inline-block px-6 md:px-10 lg:px-12 text-[10px] md:text-xs lg:text-sm font-bold tracking-wider">
               UVD
